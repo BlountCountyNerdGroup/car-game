@@ -21,8 +21,8 @@ setInterval(function() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // For permanent scrolling of the road
-  ctx.drawImage(bgImage, 0, scrolledTo);
-  ctx.drawImage(bgImage, 0, scrolledTo-599);
+  ctx.drawImage(bgImage, -175, scrolledTo);
+  ctx.drawImage(bgImage, -175, scrolledTo-599);
 
   ctx.drawImage(carImage, 300, 250, 70, 100);  // Note that last two values are width and height
 }, 20);
