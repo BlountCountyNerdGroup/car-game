@@ -27,11 +27,6 @@ setInterval(function() {
   ctx.drawImage(carImage, 300, 250, 70, 100)
 }, 20);
 
-// Event handling
-addEventListener("keydown", function() {
-  alert("Do not type and drive!")
-});
-
 // Questions
 var questions = ["Should you try to juggle, ride a unicycle, and drive at the same time?", "Should you let your dog drive your car?", "Are you a good driver?"];
 var answer = ["yes", "no", "maybe"];
