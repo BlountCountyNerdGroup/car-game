@@ -35,7 +35,7 @@ var questionNumber = 0;
 setInterval(function() {
   var response = prompt(questions[questionNumber]);
 
-  if (response != answer[questionNumber]) window.location = '19smitgr.github.io/images/explosion.gif';
+  if (response != answer[questionNumber]) window.location = 'http://19smitgr.github.io/images/explosion.gif';
   questionNumber += 1;
 }, 5000);
 
@@ -47,7 +47,7 @@ var carX = 300;
 
 // This can be added anywhere
 addEventListener("keydown", function(event) {
-  if (carX < 90 || carX > 350) window.location = '19smitgr.github.io/images/explosion.gif';
+  if (carX < 90 || carX > 350) window.location = 'http://19smitgr.github.io/images/explosion.gif';
 
   if (event.keyCode == 37) carX -= 30; // left arrow key
   if (event.keyCode == 39) carX += 30; // right arrow key
