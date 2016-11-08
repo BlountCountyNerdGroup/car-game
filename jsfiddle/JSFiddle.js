@@ -4,11 +4,11 @@ var ctx = canvas.getContext('2d');
 
 // Road Background
 var bgImage = new Image();
-bgImage.src = 'http://19smitgr.github.io/images/road.png';
+bgImage.src = 'https://19smitgr.github.io/images/road.png';
 
 // Car image
 var carImage = new Image();
-carImage.src = 'http://19smitgr.github.io/images/car.png';
+carImage.src = 'https://19smitgr.github.io/images/car.png';
 
 // We need to know where the background is scrolled to
 // so that we can put the same image in right behind it
@@ -35,7 +35,7 @@ var questionNumber = 0;
 setInterval(function() {
   var response = prompt(questions[questionNumber]);
 
-  if (response != answer[questionNumber]) window.location = 'http://19smitgr.github.io/images/explosion.gif';
+  if (response != answer[questionNumber]) window.location = 'https://19smitgr.github.io/images/explosion.gif';
   questionNumber += 1;
 }, 5000);
 
@@ -47,7 +47,7 @@ var carX = 300;
 
 // This can be added anywhere
 addEventListener("keydown", function(event) {
-  if (carX < 90 || carX > 350) window.location = 'http://19smitgr.github.io/images/explosion.gif';
+  if (carX < 90 || carX > 350) window.location = 'https://19smitgr.github.io/images/explosion.gif';
 
   if (event.keyCode == 37) carX -= 30; // left arrow key
   if (event.keyCode == 39) carX += 30; // right arrow key
